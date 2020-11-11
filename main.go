@@ -10,7 +10,7 @@ func main() {
 		})
 	})
 	r.GET("test", func(c *gin.Context) {
-		c.String(200, "web3,"+service())
+		c.String(200, "web3-v1,"+service())
 	})
 	r.Run() // listen and serve on 0.0.0.0:8080
 }
